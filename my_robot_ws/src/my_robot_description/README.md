@@ -25,6 +25,9 @@ The project demonstrates:
 
 ## Package Structure
 
+## Workspace Structure
+
+```text
 my_robot_ws
 │
 ├── build/
@@ -32,37 +35,37 @@ my_robot_ws
 ├── log/
 │
 └── src
-│
-├── my_robot_bringup
-│ │
-│ ├── config
-│ │ └── gazebo_bridge.yaml
-│ │
-│ ├── launch
-│ │ └── my_robot.launch.xml
-│ │
-│ ├── CMakeLists.txt
-│ └── package.xml
-│
-│
-└── my_robot_description
-│
-├── launch
-│ ├── display.launch.xml
-│ └── gazebo.launch.xml
-│
-├── rviz
-│ └── urdf_config.rviz
-│
-├── urdf
-│ ├── common_properties.xacro
-│ ├── gazebo.xacro
-│ ├── mobile_base.xacro
-│ └── my_robot.urdf.xacro
-│
-├── .gitignore
-├── CMakeLists.txt
-└── package.xml
+    │
+    ├── my_robot_bringup
+    │   │
+    │   ├── config
+    │   │   └── gazebo_bridge.yaml
+    │   │
+    │   ├── launch
+    │   │   └── my_robot.launch.xml
+    │   │
+    │   ├── CMakeLists.txt
+    │   └── package.xml
+    │
+    └── my_robot_description
+        │
+        ├── launch
+        │   ├── display.launch.xml
+        │   └── gazebo.launch.xml
+        │
+        ├── rviz
+        │   └── urdf_config.rviz
+        │
+        ├── urdf
+        │   ├── common_properties.xacro
+        │   ├── gazebo.xacro
+        │   ├── mobile_base.xacro
+        │   └── my_robot.urdf.xacro
+        │
+        ├── .gitignore
+        ├── CMakeLists.txt
+        └── package.xml
+```
 
 # Build
 '''bash
