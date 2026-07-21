@@ -199,6 +199,25 @@ To visualize the robot model:
 ros2 launch my_robot_description display.launch.xml
 ```
 
+# Robot Movement
+
+Open a **new terminal**, source your workspace, and publish velocity commands to move the robot.
+
+### Move Forward
+
+```bash
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist \
+"{linear: {x: 0.2}, angular: {z: 0.0}}"
+```
+
+### Rotate in Place
+
+```bash
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist \
+"{linear: {x: 0.0}, angular: {z: 0.5}}"
+```
+
+> **Note:** Ensure the robot simulation is already running before publishing velocity commands.
 ---
 
 # Robot Description
